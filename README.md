@@ -2,3 +2,4 @@
 
 **Arquivos:**
 * [Introdução](probest_intro.ipynb)
+* [Exploratory Data Analysis (EDA)](probest_edas.ipynb)
