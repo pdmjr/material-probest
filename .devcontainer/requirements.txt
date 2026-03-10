@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+notebook
+jupyterlab
+ipykernel
+scikit-learn
+seaborn
+ipywidgets
+statistics
+scipy
+opendatasets
+kaggle

@@ -1,0 +1,11 @@
+services:
+  notebook:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ..:/workspace
+      - ../arquivos/kaggle.json:/root/.kaggle/kaggle.json:ro
+    working_dir: /workspace
