@@ -1,9 +1,11 @@
 #!/bin/sh
 
-if [ ! -f ./arquivos/kaggle.json ]; then
-  cp ./arquivos/kaggle.example.json ./arquivos/kaggle.json
-  chmod 600 ./arquivos/kaggle.json
-  echo "Arquivo ./arquivos/kaggle.json criado. Edite com suas credenciais do Kaggle."
+if [ ! -d ./datasets ]; then
+  mkdir ./datasets
+  echo "Diretório ./datasets criado."
 else
-  echo "Arquivo ./arquivos/kaggle.json já existe."
+  echo "Diretório ./datasets já existe."
 fi
+
+mkdir -p /root/.kaggle && echo seu_token > /root/.kaggle/access_token && chmod 600 /root/.kaggle/access_token
+echo "Arquivo de Token criado com sucesso."

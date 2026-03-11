@@ -7,11 +7,4 @@ services:
       - "8888:8888"
     volumes:
       - ..:/workspace
-      - ../arquivos/kaggle.example.json:/tmp/kaggle.json:ro
     working_dir: /workspace
-    command: >
-      bash -c "
-      mkdir -p /root/.kaggle &&
-      cp /tmp/kaggle.json /root/.kaggle/kaggle.json &&
-      chmod 600 /root/.kaggle/kaggle.json
-      "
