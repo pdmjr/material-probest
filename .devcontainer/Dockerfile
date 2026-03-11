@@ -7,8 +7,10 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /workspace
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    vim \
     git \
     curl \
+    unzip \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
