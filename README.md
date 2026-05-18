@@ -1,4 +1,4 @@
-# Material auxiliar de revisão sobre Probabilidade e Estatística
+# Material auxiliar de revisão sobre Estatística
 
 **Arquivos:**
 * [Introdução](arquivos/notebooks/probest_intro.ipynb)
